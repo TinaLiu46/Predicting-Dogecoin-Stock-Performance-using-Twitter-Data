@@ -48,7 +48,7 @@ Both the R^2 of test set of and Linear Regression and Random Forest < 0.1 - Twee
     - The fluctuation of stock price depends on so many factors - and tweets count is not important enough to explain this fluctuation.
 
 
-[The link to the notebook is here]()
+The link to the notebook is here:[ Analytical Goal #1](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%231.ipynb)
 
 ### Features of Tweets
 Analytical Goal: Add retweet, reply, comment, like counts as features and predict price (y = daily stock price)
@@ -65,6 +65,7 @@ We trained four random forest models to predict the stock price. The naive one w
 - Possible explanation
 It’s hard to tell why our data is right skewed. if it’s due to the rare market shock, then the high metric value from original model makes sense; if it’s due to outliers, the truncate one makes sense; if it’s due to lack of data, then the metric is not reliable
 
+The link to the notebook is here:[ Analytical Goal #2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%231.ipynb)
 
 ### Sentiment of Tweets
 Analytical Goal: Add text sentiment score into the model and predict the daily stock price
