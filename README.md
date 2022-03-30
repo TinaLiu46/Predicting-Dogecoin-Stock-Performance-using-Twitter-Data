@@ -83,7 +83,7 @@ We used SentimentIntensityAnalyzer to convert cleaned text to a score converted 
             R2: ~0.1608
             Partial Dependence Plot: with many neutral sentiments, we still see negative sentiment tweets would yield to low stock closing price, vice versa.
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/goal3.png?raw=true "Title")
-The link to the notebook is here:[ Analytical Goal #3](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%232.ipynb)
+The link to the notebook is here:[ Analytical Goal #3](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%233.ipynb)
 
 ## Conclusion & Lesson Learned
 - Different models could be used to explore different analytical goals; when we have more features, more time is required to do data cleaning and model fitting.
