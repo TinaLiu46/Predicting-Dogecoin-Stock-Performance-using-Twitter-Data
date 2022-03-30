@@ -4,18 +4,45 @@
 - Utilized different Machine Learning models (Linear Regression, Random Forest, AutoML) to analyze the impact of tweets on Dogecoin’s stock price  
 # Table of Contents
 1. [Description of data and data collection process](#description-of-data-and-data-collection-process)
-2. [Analytical goals](#example2)
-    1. [Tweets Count]
-    2. [Features of Tweets]
-    3. [Sentiment of Tweets]
-4. [Third Example](#third-example)
-5. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+2. [Analytical goals](#analytical-goals)
+    1. [Tweets Count](#tweets-count)
+    2. [Features of Tweets](#features-of-tweets)
+    3. [Sentiment of Tweets](#sentiment-of-tweets)
+4. [Findings](#findings)
+5. [Conclusion](#conclusion)
 
 
 ## Description of data and data collection process
+Data Collection: 
+- Ran script on AWS EC2 instance pulling related Tweets using API and stored data in __AWS__ S3 bucket
+- Imported data from S3 to __Apache Spark__ for data preprocessing to create data aggregates on __Databricks__
+- Stored the aggregates in MongoDB on __MongoDB Atlas__
+
+      Data Size : 24036
+      Date Range: 2020-01-01 – 2020-05-09
+Examples of our dataframe is shown below:
+
+| text  | retweet_count | reply_count  | like_count | quote_count  | created_date |
+| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
+| Bitcoin going up sig...  | 0 | 1 | 0 | 2 | 2020-02-03 |
+     
+
 ## Analytical goals
-## Third Example
-## [Fourth Example](http://www.fourthexample.com) 
+### Tweets Count
+__Predict the daily stock price given the number of tweets on a given date (tweets volume)__
+
+Model Used: Linear Regression, Random Forest
+
+[The link to the notebook is here]()
+
+### Features of Tweets
+__Add retweet, reply, comment, like counts as features and predict price (y = daily stock price)__
+![Goal2](Images/goal2.jpg?raw=true "Title")
+
+### Sentiment of Tweets
+__Add text sentiment score into the model and predict the daily stock price__
+## Findings
+## Conclusion
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
