@@ -65,7 +65,7 @@ We trained four random forest models to predict the stock price. The naive one w
 - Possible explanation
 It’s hard to tell why our data is right skewed. if it’s due to the rare market shock, then the high metric value from original model makes sense; if it’s due to outliers, the truncate one makes sense; if it’s due to lack of data, then the metric is not reliable
 
-The link to the notebook is here:[ Analytical Goal #2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%231.ipynb)
+The link to the notebook is here:[ Analytical Goal #2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%232.ipynb)
 
 ### Sentiment of Tweets
 Analytical Goal: Add text sentiment score into the model and predict the daily stock price
