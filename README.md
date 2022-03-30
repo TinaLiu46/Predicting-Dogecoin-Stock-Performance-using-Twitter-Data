@@ -27,20 +27,61 @@ Examples of our dataframe is shown below:
 | Bitcoin going up sig...  | 0 | 1 | 0 | 2 | 2020-02-03 |
      
 
+*The model runs on a cluster of 30.5 GB Memory, 4 Cores for both driver and workers, with # worker of 8
+
 ## Analytical goals
 ### Tweets Count
-__Predict the daily stock price given the number of tweets on a given date (tweets volume)__
+Analytical Goal: Predict the daily stock price given the number of tweets on a given date (tweets volume)
+- Model Performance: 
+    - Linear Regression:
 
-Model Used: Linear Regression, Random Forest
+            R2: 0.0628174
+    - Random Forest
+
+            R2: -0.10935692111657858
+
+- Findings:
+
+Both the R^2 of test set of and Linear Regression and Random Forest < 0.1 - Tweets Counts and DogeCoin stock price are not significantly correlated.
+- Possible Explanation:
+    - The data we collected is not enough to generate some results
+    - The fluctuation of stock price depends on so many factors - and tweets count is not important enough to explain this fluctuation.
+
 
 [The link to the notebook is here]()
 
 ### Features of Tweets
 Analytical Goal: Add retweet, reply, comment, like counts as features and predict price (y = daily stock price)
+- Model Performance:
+    - Random Forest:
+        
+            R2 score: 0.5115
+            MSE: 0.05533
+- Data Exploration
+By looking at the distribution of features and the scatter plots, we find that our data was right skewed, which may lead to poor prediction result.
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/Goal2.png?raw=true "Title")
+- Feature Engineering
+We trained four random forest models to predict the stock price. The naive one without feature transformation got an extremely high R^2, which is counter-intuition. After taking the log, R^2 becomes negative.
+- Possible explanation
+It’s hard to tell why our data is right skewed. if it’s due to the rare market shock, then the high metric value from original model makes sense; if it’s due to outliers, the truncate one makes sense; if it’s due to lack of data, then the metric is not reliable
+
 
 ### Sentiment of Tweets
 Analytical Goal: Add text sentiment score into the model and predict the daily stock price
+- Sentiment Score Conversion Package
+We used SentimentIntensityAnalyzer to convert cleaned text to a score converted score to a number between -1 and 1 (negative and positive)
+- Models Performance:
+    - RandomForestRegressor:
+
+            RMSE: 0.3640
+            MSE: ~0.1325
+            R2: ~-0.0271
+    - H2O:
+    
+            Best Model: StackedEnsemble_AllModels_4_AutoML_3_20220309_13719
+            MSE: ~0.1165
+            R2: ~0.1608
+            Partial Dependence Plot: with many neutral sentiments, we still see negative sentiment tweets would yield to low stock closing price, vice versa.
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/goal3.png?raw=true "Title")
 ## Findings
 ## Conclusion
