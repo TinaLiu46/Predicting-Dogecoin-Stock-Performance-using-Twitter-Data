@@ -36,11 +36,12 @@ Model Used: Linear Regression, Random Forest
 [The link to the notebook is here]()
 
 ### Features of Tweets
-__Add retweet, reply, comment, like counts as features and predict price (y = daily stock price)__
-![Goal2](Images/goal2.jpg?raw=true "Title")
+Analytical Goal: Add retweet, reply, comment, like counts as features and predict price (y = daily stock price)
+![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/Goal2.png?raw=true "Title")
 
 ### Sentiment of Tweets
-__Add text sentiment score into the model and predict the daily stock price__
+Analytical Goal: Add text sentiment score into the model and predict the daily stock price
+![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/goal3.png?raw=true "Title")
 ## Findings
 ## Conclusion
 
