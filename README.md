@@ -8,8 +8,7 @@
     1. [Tweets Count](#tweets-count)
     2. [Features of Tweets](#features-of-tweets)
     3. [Sentiment of Tweets](#sentiment-of-tweets)
-4. [Findings](#findings)
-5. [Conclusion](#conclusion)
+3. [Conclusion](#conclusion)
 
 
 ## Description of data and data collection process
@@ -84,12 +83,17 @@ We used SentimentIntensityAnalyzer to convert cleaned text to a score converted 
             R2: ~0.1608
             Partial Dependence Plot: with many neutral sentiments, we still see negative sentiment tweets would yield to low stock closing price, vice versa.
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/goal3.png?raw=true "Title")
-## Findings
-## Conclusion
+The link to the notebook is here:[ Analytical Goal #3](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%232.ipynb)
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-</p>
+## Conclusion & Lesson Learned
+- Different models could be used to explore different analytical goals; when we have more features, more time is required to do data cleaning and model fitting.
+- Tweets Counts and DogeCoin stock price are not significantly correlated. (R2_RF : -0.11 ; R2_LR : 0.06)
+- We notice some extremely validation metrics results when we add more features (reply count, like count,
+quote count) to the model. Some of the possible reasons have been discussed before.
+- When we take tweet sentiment into considerations, with the H2O model, only 16.1% of the variation was
+explained. The sentiment score is making some influences on the stock price prediction, though limited. H2O would more likely to select the best model comparing to we individually implement one single model, as it could ensemble good models together.
+- There might be many possible limitations in our dataset, e.g. right skewed data, limited amount, etc. Further investigations are required to build a better model. For future steps, we would like to gather more data and also include other possible features should be introduced.
+
 
 <h3 align="left">Languages and Tools:</h3>
 <p align="left"> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> </p>
