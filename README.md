@@ -41,7 +41,7 @@ Analytical Goal: Explore the correlation of the daily stock price and the number
 
 - Findings:
 
-Both the R^2 of test set of and Linear Regression and Random Forest < 0.1 - Tweets Counts and DogeCoin stock price are not significantly correlated.
+    Both the R^2 of test set of and Linear Regression and Random Forest < 0.1 - Tweets Counts and DogeCoin stock price are not significantly correlated.
 - Possible Explanation:
     - The data we collected is not enough to generate some results
     - The fluctuation of stock price depends on so many factors - and tweets count is not important enough to explain this fluctuation.
