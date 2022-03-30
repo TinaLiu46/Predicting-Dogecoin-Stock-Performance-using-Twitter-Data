@@ -29,7 +29,8 @@ Examples of our dataframe is shown below:
 *The model runs on a cluster of 30.5 GB Memory, 4 Cores for both driver and workers, with # worker of 8
 
 ## Analytical Findings
-### Analytical Finding 1
+
+### 🚀Analytical Finding 1
 Analytical Goal: Explore the correlation of the daily stock price and the number of tweets on a given date (tweets volume)
 - Model Performance: 
     - Linear Regression:
@@ -49,7 +50,7 @@ Analytical Goal: Explore the correlation of the daily stock price and the number
 
 The link to the notebook is here:[ Analytical Goal #1](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%231.ipynb)
 
-### Analytical Finding 2
+### 🚀Analytical Finding 2
 Analytical Goal: Add retweet, reply, comment, like counts as features and predict price (y = daily stock price)
 - Model Performance:
     - Random Forest:
@@ -68,7 +69,7 @@ By looking at the distribution of features and the scatter plots, we find that o
 
 The link to the notebook is here:[ Analytical Goal #2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%232.ipynb)
 
-### Analytical Finding 3
+### 🚀Analytical Finding 3
 Analytical Goal: Add text sentiment score into the model and predict the daily stock price
 - Sentiment Score Conversion Package
 We used SentimentIntensityAnalyzer to convert cleaned text to a score converted score to a number between -1 and 1 (negative and positive)
@@ -87,7 +88,7 @@ We used SentimentIntensityAnalyzer to convert cleaned text to a score converted 
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/goal3.png?raw=true "Title")
 The link to the notebook is here:[ Analytical Goal #3](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%233.ipynb)
 
-## Conclusion and Lesson Learned
+## 💡Conclusion and Lesson Learned
 - Different models could be used to explore different analytical goals; when we have more features, more time is required to do data cleaning and model fitting.
 - Tweets Counts and DogeCoin stock price are not significantly correlated. (R2_RF : -0.11 ; R2_LR : 0.06)
 - We notice some extremely validation metrics results when we add more features (reply count, like count,
