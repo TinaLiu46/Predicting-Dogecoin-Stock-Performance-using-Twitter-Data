@@ -34,10 +34,10 @@ Analytical Goal: Predict the daily stock price given the number of tweets on a g
 - Model Performance: 
     - Linear Regression:
 
-            R2: 0.0628174
+            R2: 0.06282
     - Random Forest
 
-            R2: -0.10935692111657858
+            R2: -0.1094
 
 - Findings:
 
@@ -59,9 +59,11 @@ Analytical Goal: Add retweet, reply, comment, like counts as features and predic
 - Data Exploration
 By looking at the distribution of features and the scatter plots, we find that our data was right skewed, which may lead to poor prediction result.
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/Goal2.png?raw=true "Title")
-- Feature Engineering
+- Feature Engineering:
+
 We trained four random forest models to predict the stock price. The naive one without feature transformation got an extremely high R^2, which is counter-intuition. After taking the log, R^2 becomes negative.
-- Possible explanation
+- Possible explanation:
+
 It’s hard to tell why our data is right skewed. if it’s due to the rare market shock, then the high metric value from original model makes sense; if it’s due to outliers, the truncate one makes sense; if it’s due to lack of data, then the metric is not reliable
 
 The link to the notebook is here:[ Analytical Goal #2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Notebooks/Analytical%20Goal%20%232.ipynb)
