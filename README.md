@@ -57,7 +57,7 @@ Analytical Goal: Add retweet, reply, comment, like counts as features and predic
         
             R2 score: 0.5115
             MSE: 0.05533
-- Data Exploration
+- Data Exploration:
 By looking at the distribution of features and the scatter plots, we find that our data was right skewed, which may lead to poor prediction result.
 ![Goal2](https://github.com/TinaLiu46/Predicting-Dogecoin-Stock-Performance-using-Twitter-Data/blob/main/Images/Goal2.png?raw=true "Title")
 - Feature Engineering:
