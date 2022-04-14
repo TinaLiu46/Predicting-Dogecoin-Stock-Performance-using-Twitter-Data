@@ -71,9 +71,9 @@ The link to the notebook is here:[ Analytical Goal #2](https://github.com/TinaLi
 
 ### 🚀Analytical Finding 3
 Analytical Goal: Add text sentiment score into the model and predict the daily stock price
-- Sentiment Score Conversion Package
+* Sentiment Score Conversion Package
 We used SentimentIntensityAnalyzer to convert cleaned text to a score converted score to a number between -1 and 1 (negative and positive)
-- Models Performance:
+* Models Performance:
     - RandomForestRegressor:
 
             RMSE: 0.3640
